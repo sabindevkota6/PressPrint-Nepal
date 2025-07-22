@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
+    <title> pressprint Nepal | Contact US</title>
+    <style>
+        /* set margin and padding 0 for whole page */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #f5f5f5;
+        }
+
+        /* style for form section */
+        .formsection {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 220px;
+            margin-bottom: 30px;
+            padding-left: 125px;
+            
+        }
+
+        .reachsection {
+            margin-left: 30px;
+            margin: 100px 0px 100px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .call-us {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .numbersection {
+            margin: 10px 0px 0px 35px;
+            flex-direction: column;
+        }
+
+        .reach-title-div {
+            padding: 3px 0px;
+            border-radius: 50px;
+            vertical-align: middle;
+            text-align: center;
+            background-image: linear-gradient(rgba(101, 101, 101, 0.822), #232424);
+        }
+
+        #inputsection {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 50px;
+            width: 700px;
+            background: #fff;
+            box-shadow: 4px 4px 4px 4px rgb(46, 39, 39);
+            border-radius: 13px;
+            float: right;
+            position: relative;
+
+        }
+
+
+        .contactForm {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .error-message {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            height: 20px;
+        }
+
+        .error-message span {
+            margin-left: 260px;
+            color: red;
+        }
+
+        .placeholder {
+
+            padding: 5px;
+            color: gray;
+            font-size: 15px;
+        }
+
+        /* styles for form inputs and labels */
+        .input {
+            margin-left: 20px;
+            font-size: 15px;
+            height: 45px;
+            width: 300px;
+            border: none;
+            border-bottom-style: inset;
+            border-bottom: 1.2px solid black;
+        }
+
+        label {
+            color: rgb(100, 92, 92);
+            padding-top: 10px;
+            float: left;
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: right;
+            position: relative;
+            width: 100px;
+        }
+
+        textarea {
+            font-size: 15px;
+            margin-left: 20px;
+            padding-top: 10px;
+            max-width: 300px;
+            min-width: 300px;
+            height: 180px;
+            max-height: 180px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        .contact-form-title {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 64px 15px 64px 15px;
+        }
+
+        .contact-form-title:before {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(29, 53, 65, 0.692);
+        }
+
+        .contact-form-title-1 {
+            font-size: 23px;
+            color: #fff;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: 2px;
+            padding-bottom: 2px;
+        }
+
+        .contact-form-title-2 {
+            font-size: 17px;
+            color: #fff;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        /* submit button for form */
+        .button {
+            border: none;
+            background: rgb(101, 101, 240);
+            color: #fff;
+            padding: 15px 35px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            border-radius: 25px;
+            margin: 0px 0px 10px 0px;
+        }
+
+        /* on submit button hover */
+        .button:hover {
+            background-color: rgb(75, 67, 94);
+        }
+
+        #reachsection {
+            margin-left: -90px;
+        }
+
+        .anchors {
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+        }
+
+        .anchors a {
+            margin-top: 20px;
+        }
+
+        .anchors a img {
+            margin: 10px;
+        }
+
+
+        
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    
+    <div class="navbar" style="background-color: black; ">
+    
+    <img src="../images/paper-print-printer-icon-30.png" width="70px">
+    <p style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 25px; padding-right: 20%;">PressPrint Nepal</p>   
+    
+    <nav>
+    <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="product.html">Product</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="aboutus.html">About us</a></li>
+    <li><a href="#">Contact Us</a></li>
+   
+    </ul>
+    </nav> 
+   
+    <img src="../images/b.cart.jpg" alt="logo of cart" width="75px" height="75px" style="position: relative; right:
+    25px; bottom: 4px;">
+    </div>
+
+
+        <!--Form section-->
+        <div class="formsection">
+            <div id="reachsection">
+                <div id="call-us">
+                    <div class="reach-title-div">
+
+                        <img style="float: left;margin-right:5px;height: 30px;opacity: 0.75;"
+                            src="../images/phone-black.png" alt="">
+                        <span class="contact-form-title-1" id="reach-title">Call US</span>
+                    </div>
+                    <div class="numbersection">
+                        <div class="contact-form-title-2" id="reach-texts">
+                            <table>
+                                <tr>
+                                    <td style="color:black">+977- 9843955444 </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="show-map" class="reach-title-div" style="margin-top: 10px;">
+                    <span>
+
+
+                        <span class="contact-form-title-1" id="reach-title">Find us</span>
+                    </span>
+                </div>
+                <div class="anchors">
+                    <a href="https://www.facebook.com/pratik.prasai.167" title="Facebook"
+                        style="text-decoration: none;"><img src="../images/R.png" alt="facebook"  width="25px" height="25px"></a>
+                    <a href="https://www.instagram.com/prasai_pratik/" title="Instagram"
+                        style="text-decoration: none;"><img src="../images/OIP (1).jpeg" alt="instagram" width="25px" height="25px"></a>
+                    <a href="https://www.linkedin.com/in/pratik-prasai-734b62248/" title="Linkedin"
+                        style="text-decoration: none;"><img src="../images/bb.jpeg" alt="linkedin" width="25px" height="25px"></a>
+                </div>
+            </div>
+            <div id="inputsection">
+                <div class="contact-form-title" style="background-color: rgb(54, 52, 52);">
+                    <span class="contact-form-title-1">
+                        Get in touch
+                    </span>
+                    <span class="contact-form-title-2"> 
+                        Contact us for any queries
+                    </span>
+                </div>
+                <form id="contactForm" style="padding-left: 15%;">
+                    <div class="row" id="name-div">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter full name" class="input">
+                    </div>
+                    <div class="error-message"><span id="error-message-name"></span></div>
+                    <div class="row" id="email-div">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter email address" class="input">
+                    </div>
+                    <div class="error-message"><span id="error-message-email"></span></div>
+                    <div class="row" id="subject-div">
+                        <label for="subject">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your comment"></textarea>
+                    </div>
+                    <div class="error-message"><span id="error-message-subject"></span></div>
+                    <div class="row">
+                        <button style="margin-left: 50%;" onclick="return validateForm()" type="button" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+                              <!---------------- Footer Section --------->
+      <div class="footer">
+        <div>
+         
+        <div class="footer-title" style="color: white;">Connect with US</div>
+        <div style="display: flex; flex-direction: column;">
+        <a style="color: white;" href="https://www.facebook.com/" title="Facebook"><img src="../images/R.png" alt="Facebook" width="25px" height="25px"> </a><br>
+        <a style="color: white;" href="https://www.instagram.com/" title="Instagram"><img src="../images/OIP (1).jpeg" alt="instagram" width="25px" height="25px" ></a><br>
+        <a style="color: white;" href="https://www.linkedin.com/" title="Linkedin"><img src="../images/bb.jpeg" alt="linkedin" width="25px" height="25px"></a>
+        </div>
+        </div>
+        <hr style="margin-left:110px;margin-top: -20px;height: 180px;">
+        <div style="margin-left:100px;align-items: center;text-align: center;margin-top: -30px;">
+        <form id = "subscribe" action="">
+        <img src="../images/envelop.jpg" style="width:60px;height:60px" alt="Newsletter" title="Subscribe to newsletter">
+        <p style="padding:10px; color: white;">Know about our future products and availability</p>
+        <input style="background-color: white; color: #555;" type="email" placeholder="Enter your email" id = "email" required>
+        <button style="cursor:pointer" onclick="return subscribed()">SUBSCRIBE</button>
+        </form>
+        </div>
+        <hr style="margin-left:100px;margin-top: -20px;height: 180px;";>
+        <div style="height:150px;display:flex;flex-direction:column ;margin-left: 50px;justify-content: space-between">
+        <div style="display:flex;flex-direction: row;">
+        
+        <div style="color: white; margin-right: 200px;">
+        Pepsicola <br>
+        Kathmandu, Nepal <br>
+        </div>
+        </div>
+        <div style="display:flex;flex-direction: row">
+        <div style="color: white;margin-right: 200px;">
+        (+977) 9840221065
+        </div>
+        </div>
+        <div style="display:flex;flex-direction: row;justify-content: center">
+        <div style="color: white; margin-right: 200px;">
+        pressprintnepal@gmail.com
+        </div>
+        </div>
+        </div>
+        </div>
+        <div align="center" style="padding:0px 0px 10px 0px;font-size: 15px;font-family: Poppins-Regular;box-sizing:border-box;background:url(../background-images/white.png)">
+        Copyright &copy Pressprint Nepal 2024. All rights reserved.
+        </div> 
+       </div>  
+
+        <script>
+
+            //Use of JavaScript
+            function validateForm() {
+                var s = 0;
+                s += validateName();
+                s += validateEmail();
+                s += validateMessage();
+
+                if (s == 3) {
+                    alert("Form successfully sent. Thankyou for reaching us.")
+                    document.getElementById("contactForm").reset()
+                }
+            }
+
+
+            //validate name
+            function validateName() {
+                var name = document.forms["contactForm"]["name"];
+                var error_message_name = document.getElementById("error-message-name");
+                if (name.value == "") {
+                    error_message_name.innerHTML = "***enter valid name";
+                    name.style.borderColor = "red";
+                    return 0;
+                }
+                else {
+                    error_message_name.innerHTML = "";
+                    name.style.borderColor = "black";
+                    return 1;
+                }
+            }
+
+            //validate message
+            function validateMessage() {
+                var message = document.forms["contactForm"]["message"];
+                var error_message_subject = document.getElementById("error-message-subject");
+                if (message.value == "") {
+                    error_message_subject.innerHTML = "***enter valid message";
+                    message.style.borderColor = "red";
+                    return 0;
+                }
+                else {
+                    error_message_subject.innerHTML = "";
+                    message.style.borderColor = "black";
+                    return 1;
+                }
+            }
+
+            // validate email
+            function validateEmail() {
+                var emailID = document.forms["contactForm"]["email"];
+                var error_message_email = document.getElementById("error-message-email");
+                atpos = emailID.value.indexOf("@");
+                dotpos = emailID.value.lastIndexOf(".");
+
+                if (atpos < 1 || (dotpos - atpos < 2)) {
+                    error_message_email.innerHTML = "***enter valid email";
+                    emailID.style.borderColor = "red";
+                    return 0;
+                }
+                else {
+                    error_message_email.innerHTML = "";
+                    emailID.style.borderColor = "black";
+                    return 1;
+                }
+            }
+            </script>
+            
+        <script src="mainjs.js"></script>
+</body>
+
+</html>

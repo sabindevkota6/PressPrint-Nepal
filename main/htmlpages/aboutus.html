@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section-->
+  <head>
+<!--meta section for page's description-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Printer Store" />
+    <meta name="keywords" content="printers,printers store, laser printer,impact printer, affordable printers, Pressprint Nepal" />
+    <meta name="author" content="Sabin Devkota" />
+
+    <!--title of the page-->
+    <title>About us</title>
+
+    <!--Using internal CSS for page decoration-->
+    <style> 
+     body
+     {
+       font-family: Arial;
+       padding: 0%;
+       margin: 0%;
+       background: #f5f5f5;
+      }
+      .hr
+      {
+        width: 88%;
+        color: rgb(203, 198, 198);
+      }
+
+       p
+      {
+       color: #555;
+      }
+
+      h1{font-size: 50px; font-family: 'Times New Roman', Times, serif; }
+
+      h2{font-size: 40px;}
+
+      label{font-style: italic; font-family: serif;}
+
+     .pic
+      {
+         width: 80%;
+         height: 100%;
+        padding-left: 15%;
+      }
+      
+
+      :placeholder-shown {font-style: italic; font-family: serif;}
+      /*creating classes to group CSS properties
+      which makes it easier to apply them all in a particular tag*/
+      
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        width: 100%;
+        
+      }
+      .smallcard {
+        background-color: white;
+        border: 1.5px solid;
+        border-color: rgb(34, 33, 33);
+        text-align: center;
+        box-shadow: 5px 5px 30px rgb(160, 156, 156);
+      }
+      .row {
+        display: flex;
+      }
+      .slider
+      {
+         width: 100%;
+         height: 500 px;
+         margin: 0 px;
+         padding: 0 px;
+         box-sizing: border-box;
+         overflow: hidden;
+       }
+
+        .border
+        {
+          border: 0.5px solid;
+          border-color: rgb(203, 198, 198);
+        }
+
+        .box
+        {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 40px;
+          padding-right: 40px;
+          margin: 10px;
+        }
+
+        .leftcolumn
+        {
+          flex: 50%;
+        }
+
+        .rightcolumn
+        {
+          flex: 50%;
+          padding-left: 20px;
+        }
+
+        .row .card:hover
+        {
+          box-shadow: 5px 5px 30px rgb(75,67,94);
+          transform: translate3d(-10px,-10px,-10px); 
+          transition: 0.3s;
+        
+        }
+        
+
+        .row.card.button
+        {
+          box-shadow: blue;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../CSS/mainstyle.css">
+  </head> 
+  
+    <!--Body Section-->
+    <body>
+      <!-- This is a Section for Header-->
+      <!-- Navigation Bar -->
+    
+    <div class="navbar" style="background-color: black; ">
+    
+    <img src="../images/paper-print-printer-icon-30.png" width="70px">
+    <p style="color: white; font-family: 'Times New Roman', Times, serif; font-size: 25px; padding-right: 20%;">PressPrint Nepal</p>   
+    
+    <nav>
+    <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="product.html">Product</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+   
+    </ul>
+    </nav> 
+   
+    <img src="../images/b.cart.jpg" alt="logo of cart" width="75px" height="75px" style="position: relative; right:
+    25px; bottom: 4px;">
+    </div>
+      
+   
+      <section>
+        <!--main heading-->
+        <h1 style=" color: white; text-align: center; font-size: 100px; background-color: rgb(54, 52, 52);">ABOUT US</h1>
+       </section>
+       <!-- creating a image slider using class and id-->
+       <section>
+        <div class = "slider">
+          <div id = "pic" style="padding-left: 16%;">
+            <img src="../images/Aboutusimg1.jpg">
+          </div>
+        </div>
+      </section>
+      <!-- Using internal JS for creating image slider -->
+      <script class="pic">
+        // creating an array
+        var images = ["../images/Aboutusimg1.jpg", "../Images/Aboutusimg2.jpg"];
+
+        var x = 0;
+        var imgs = document.getElementById("pic");
+        setInterval(slider, 2000);
+        /*JS function which creates a loop for the 
+        image slider*/
+        function slider()
+         {
+          if (x < images.length) {
+            x = x + 1;
+          } else {
+            x = 1;
+          }
+          imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+         }
+      </script>
+      
+      <!--This is a Section for the Introduction part of the store-->
+      <section class="box">
+        <hr style="margin-top: 10%;" class="hr"> <!--using horizontal line for creating seperation between sections-->
+        <article>
+          <h1 style="text-align: center; background-color:rgb(54, 52, 52);margin-left: 38%; margin-right: 38%; color: white;"> Who Are We?</h1>
+        </article>
+        <article style="padding-left: 10%; padding-right: 10%;">
+          <h2>Pressprint Nepal</h2>
+          <p style="font-size: 30px; text-align: center;"> 
+            Pressprint Nepal is an authorized distributor of printers in Nepal.
+            We are a group of young entrepreneurs working together as a team to provide quality and reliability to our customers.
+            We sell varieties of printers from various well-known multi-national brands.
+            We can ensure that our products are one hundred percent original.
+            Our aim is to provide the best quality products to our customers at the most affordable price.
+          </p>
+        </article>
+        <article style="padding-left: 10%; padding-right: 10%;margin-bottom: 10%;">
+          <!-- History section-->
+          <h2> Our History </h2>
+          <p style="font-size: 30px; text-align: center;">
+            Pressprint Nepal is in the market since 2020. Four of us founding members established the store back in 2020 
+            and are still working actively in the store in our particular positions.
+            We started off with a small space and less than 10 printers in stock. And with continious hardwork and dedication of us and our teammates
+            we have now become one of the biggest authorized distributor of printers in Nepal in just 4 years with 7 outlets in different cities of Nepal.
+          </p>
+        </article>
+      </section> 
+      <hr class="hr">
+      <!--This is a section for Team Intro-->
+      <section>
+        <article style="background-color: rgb(54, 52, 52);">
+          <h1 style=" color: white; text-align: center; font-size: 50px; padding-top: 3%; padding-bottom: 2%;">Meet Our Team</h1>
+        </article>
+        <hr class="hr">
+        <!-- Using div tags and classes for creating flex-->
+        <div class="row">
+          <div class="leftcolumn" style="margin: 0%; padding-right: 10%; padding-left: 10%;">
+            <div class="card border" style="margin-bottom: 40%;"> 
+              <!-- Inserting images-->
+              <figure>
+                <img src="../images/bhusan.jpg" alt="team member photo" width="300" height="500" class="pic"/>
+                <figcaption>Bhusan Bohara </br> Founder/Store Manager</figcaption>
+              </figure> 
+              <h2>Introduction</h2>
+              <p>
+               Bhusan Bohara is the founder of Pressprint Nepal. 
+               Currently he is working as the Store Manager.
+               He looks after the overall operations of the store and he is also responsible for the 
+               overall management of all the outlets.
+               Bhusan has done a degree in Marketing and Business management.
+               He also has more than 8 years of working experience in this field.
+               Prior to establishing Pressprint 
+               Nepal Bhusan worked in several successful companies of Nepal such as ING, Shuvam Group, GSL Group and more.
+              </p>
+              <!--Using navigation for linking portfolio page-->
+              <nav>
+                <a href="portfoliobhusan.html">
+                  <input type="button" value="View Portfolio" style="font-size: larger;"> <!--using button tag for navigation-->
+                </a>
+              </nav>
+            </div>
+            <div class="card border">
+              <figure>
+                <img src="../images/sabin.jpg" alt="team member photo" width="300" hight="500" class="pic"/>
+                <figcaption>Sabin Devkota <br> Sales Head/Founding Member</figcaption> 
+              </figure>
+              <h2>Introduction</h2>
+              <p>Sabin Devkota is one of the founding members of Pressprint Nepal. 
+                  Currently he is working as the Sales Head of the Store.
+                  Sabin looks after all the Sales and after sales services of the store and he is responsible for managing and making all the deals.
+                  Sabin has done his bachelor's from Islington College and he has a BBA degree with specialization in international business. 
+                  He has a very good experience in Business Management and he is currently looking after 3 businesses including Pressprint Nepal.
+              </p>
+              <nav>
+                <a href="portfoilosabin.html">
+                  <input type="button" value="View Portfolio" style="font-size: larger;">
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="rightcolumn" style=" padding-right: 10%; padding-left: 10%;">
+            <div class="card border" style="margin-bottom: 40%;">
+              <figure>
+                <img src="../images/bibhuti.jpg" alt="team member photo" width="300" height="500" class="pic" />
+                <figcaption> Bibhuti Karki <br>Marketing Specialist/ Founding Member</figcaption>
+              </figure>
+              <h2>Introduction</h2>
+              <p> Bibhuti Karki is also one of the founding member of Pressprint Nepal.
+                  Currently she is working as the Marketing Specialist of the store. She is responsible for  all the online and offline marketing 
+                  campaigns.
+                  Bibhuti has done her Master's in Marketing from Boston University of Business, United States. 
+                  She has 5 years of experience in her field. Bibhuti worked as a Marketing Specialist in Oliz Store which is one of the most
+                  renowned apple dealership of Nepal prior to establishing Pressprint Nepal.
+              </p>
+              <nav>
+                <a href="portfoliobibhuti.html">
+                  <input type="button" value="View Portfolio" style="font-size: larger;">
+                </a>
+              </nav>
+             </div>
+            <div class="card border">
+              <figure>
+                <img src="../images/pratik.jpg" alt="team member photo" width="300" height="500" class="pic" />
+                <figcaption>Pratik Prasai <br> E-commerce Manager/ Founding member </figcaption>
+              </figure>
+              <h2>Introduction</h2>
+              <p>
+                Pratik Prasai is also one of the founding members of Pressprint Nepal.
+                Currently he is working as the E-commerce manager.
+                He manages all the online operations of the store and he also handles all the social media platforms of the store.
+                Pratik has done the BCA degree from one of the most renowned colleges of Bangkok, Thailand.
+                He is a expert in his field and he has a very good understanding of his work.
+                Prior to establishing Pressprint Nepal Pratik worked as a manager of Sudhama Bank Of India for 5 years.
+              </p>
+              <nav>
+                <a href="portfoliopratik.html">
+                  <input type="button" value="View Portfolio" style="font-size: larger;">
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--This is a section for Leader's Message-->
+         <!-- Using div tags and classes for creating flex-->
+        <div class="row">
+          <div class="card border" style="margin-left: 10%; margin-right: 10%; margin-bottom: 5%; margin-top: 10%;">
+            <h1 style="margin-left: 5%; text-decoration: underline;">Message from our leader</h1>
+            <!-- using table for alignment of items inside flex -->
+            <table style="text-align: center;">
+              <tr>
+                <td>
+                  <figure>
+                    <img src="../images/bhusan2.jpg" alt="team member photo" width="300" height="500" class="pic" />
+                    <figcaption><strong style="font-size: 25px;">Bhusan Bohara </br> Founder/Store Manager</strong></figcaption>
+                    
+                  </figure>
+                </td>
+                <td class="box">
+                  <p style="font-size: 30px;">
+                    &quot;   <strong>Your trust is our strength.</strong> <br> We strongly believe that it 
+                    is our customer's trust that made our store what it is  today.
+                    We value your trust and will, as always, strive to provide you
+                    with the best quality and genuine products at the most affordable prices.&quot;
+                  </p>
+                </td>
+              </tr>
+            </table> 
+          </div>
+        </div>
+      </section>
+      <hr class="hr">
+
+      <!-- This is a feednback section-->
+      <section style="padding-bottom: 5%; font-size: larger;">
+        <h1 style=" color: white; background-color: rgb(54, 52, 52); text-align: center;margin-top: 10%; padding-top: 3%; padding-bottom: 2%;font-size: 50px;"> Feedback Section</h1>
+        <div>
+          <!--creating flex-->
+          <div class="smallcard" style="margin-left: 30%; margin-right: 30%; margin-top: 10%; margin-bottom: 10%;">
+            <h2 style="background-color: black; color: white; margin-right: 15%; margin-left: 15%;">Feedback Form</h2>
+            <p style="color: rgb(165, 165, 165); font-family: serif;font-style: italic;">(Please enter your details before adding a feedback.)</p> <br> <br>
+            
+            <!--Creating a feedback form and calling the validateform function-->
+            <form name="feedback form" onsubmit="validateform()">
+              <label> Fullname: </label> <input type="text" name="fullname"> <br><br><br>    
+              <label> Email: </label><input type="text" name="email">   <br><br><br>
+              <label>Address: </label> <input type="text" name="address"> <br> <br> <br>   
+              <label> Feedback: </label> <br> <br> <textarea name="feedback" rows="10" cols="30" placeholder="write a feedback"></textarea> <br><br>
+              <input type="submit" value="submit button" style=" background-color : rgb(101, 101, 240); color: white; border-color: rgb(203, 198, 198); font-family: serif;font-style: italic;">
+              <br>
+              <br>
+              <br>
+            </form>
+            <script> // specifying rules to be implemented while filling the form using javascript function
+            function validateform()
+            {
+              var Fullname= document.forms["feedback form"] ["fullname"].value;
+              var Email = document.forms["feedback form"] ["email"].value;
+              var Address = document.forms["feedback form"] ["address"].value;
+              var Feedback= document.forms["feedback form"] ["feedback"].value;
+              if(Fullname==""||Email==""||Address==""||Feedback=="")
+              {
+               alert("Please fill all the fields.");
+              }
+        
+               else if (Fullname.indexOf(" ")== -1)
+              {
+               alert("Invalid Details");
+              }
+              else if (Email.indexOf("@")== -1)
+              {
+               alert("Invalid Details");
+              }
+                            
+              else {
+               alert("Thank you for filling the Form.");
+              }
+            } 
+            </script>
+            </div>
+        </div>
+        
+          </section>
+        </br>
+      </br>
+      <!--This is a section for footer-->
+      <div class="footer">
+        <div>
+         
+        <div class="footer-title" style="color: white;">Connect with US</div>
+        <div style="display: flex; flex-direction: column;">
+        <a style="color: white;" href="https://www.facebook.com/" title="Facebook"><img src="../images/R.png" alt="Facebook" width="25px" height="25px"> </a><br>
+        <a style="color: white;" href="https://www.instagram.com/" title="Instagram"><img src="../images/OIP (1).jpeg" alt="instagram" width="25px" height="25px" ></a><br>
+        <a style="color: white;" href="https://www.linkedin.com/" title="Linkedin"><img src="../images/bb.jpeg" alt="linkedin" width="25px" height="25px"></a>
+        </div>
+        </div>
+        <hr style="margin-left:110px;margin-top: -20px;height: 180px;">
+        <div style="margin-left:100px;align-items: center;text-align: center;margin-top: -30px;">
+        <form id = "subscribe" action="">
+        <img src="../images/envelop.jpg" style="width:60px;height:60px" alt="Newsletter" title="Subscribe to newsletter">
+        <p style="padding:10px; color: white;">Know about our future products and availability</p>
+        <input style="background-color: white; color: #555;" type="email" placeholder="Enter your email" id = "email" required>
+        <button style="cursor:pointer" onclick="return subscribed()">SUBSCRIBE</button>
+        </form>
+        </div>
+        <hr style="margin-left:100px;margin-top: -20px;height: 180px;";>
+        <div style="height:150px;display:flex;flex-direction:column ;margin-left: 50px;justify-content: space-between">
+        <div style="display:flex;flex-direction: row;">
+        
+        <div style="color: white; margin-right: 200px;">
+        Pepsicola <br>
+        Kathmandu, Nepal <br>
+        </div>
+        </div>
+        <div style="display:flex;flex-direction: row">
+        <div style="color: white;margin-right: 200px;">
+        (+977) 9840221065
+        </div>
+        </div>
+        <div style="display:flex;flex-direction: row;justify-content: center">
+        <div style="color: white; margin-right: 200px;">
+        pressprintnepal@gmail.com
+        </div>
+        </div>
+        </div>
+        </div>
+        <div align="center" style="padding:0px 0px 10px 0px;font-size: 15px;font-family: Poppins-Regular;box-sizing:border-box;background:url(../background-images/white.png)">
+        Copyright &copy Pressprint Nepal 2024. All rights reserved
+        </div> 
+       </div>  
+       <script src="mainjs.js"></script>    
+    </body>
+</html>  
